@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ArticleAuthorGqlDto {
+  id: ID!
+}
+
+type ArticleGqlDto {
+  author: ArticleAuthorGqlDto!
+  deleted: String!
+  id: ID!
+  text: String!
+}
+
+type Query {
+  article(id: String!): ArticleGqlDto!
+}
